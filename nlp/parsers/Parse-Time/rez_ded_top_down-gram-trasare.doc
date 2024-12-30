@@ -1,0 +1,453 @@
+
+
+  prop=    [terry,writes,a,program,that,halts,.]
+Adding to agenda: <-> item([s(_1476)],0,s(_1476)) 
+Adding to chart: <2> item([s(_2094)],0,s(_2094)) 
+predictor:
+ pivot: item([s(s(_2707,_2708))],0,s(s(_2707,_2708))) 
+ others: [] 
+ constrains: [(s(s(_2707,_2708))--->[np(_2707),vp(_2708)]),append([np(_2707),vp(_2708)],[],[np(_2707),vp(_2708)])] 
+ conseqvent: item([np(_2707),vp(_2708)],0,s(s(_2707,_2708))) 
+Adding to agenda: <-> item([np(_2530),vp(_2534)],0,s(s(_2530,_2534))) 
+Adding to chart: <1> item([np(_3157),vp(_3161)],0,s(s(_3157,_3161))) 
+predictor:
+ pivot: item([np(np(_3801,_3802,_3803)),vp(_3681)],0,s(s(np(_3801,_3802,_3803),_3681))) 
+ others: [] 
+ constrains: [(np(np(_3801,_3802,_3803))--->[det(_3801),n(_3802),optrel(_3803)]),append([det(_3801),n(_3802),optrel(_3803)],[vp(_3681)],[det(_3801),n(_3802),optrel(_3803),vp(_3681)])] 
+ conseqvent: item([det(_3801),n(_3802),optrel(_3803),vp(_3681)],0,s(s(np(_3801,_3802,_3803),_3681))) 
+predictor:
+ pivot: item([np(np(_3801)),vp(_3681)],0,s(s(np(_3801),_3681))) 
+ others: [] 
+ constrains: [(np(np(_3801))--->[pn(_3801)]),append([pn(_3801)],[vp(_3681)],[pn(_3801),vp(_3681)])] 
+ conseqvent: item([pn(_3801),vp(_3681)],0,s(s(np(_3801),_3681))) 
+Adding to agenda: <-> item([det(_3636),n(_3640),optrel(_3644),vp(_3648)],0,s(s(np(_3636,_3640,_3644),_3648))) 
+Adding to agenda: <-> item([pn(_3615),vp(_3619)],0,s(s(np(_3615),_3619))) 
+Adding to chart: <0> item([det(_4767),n(_4771),optrel(_4775),vp(_4779)],0,s(s(np(_4767,_4771,_4775),_4779))) 
+Adding to chart: <5> item([pn(_5400),vp(_5404)],0,s(s(np(_5400),_5404))) 
+scanner:
+ pivot: item([pn(pn(terry)),vp(_5931)],0,s(s(np(pn(terry)),_5931))) 
+ others: [] 
+ constrains: [1 is 0+1,word(1,terry),lex(terry,pn(pn(terry)))] 
+ conseqvent: item([vp(_5931)],1,s(s(np(pn(terry)),_5931))) 
+Adding to agenda: <-> item([vp(_5865)],1,s(s(np(pn(terry)),_5865))) 
+Adding to chart: <1> item([vp(_6496)],1,s(s(np(pn(terry)),_6496))) 
+predictor:
+ pivot: item([vp(vp(_7144,_7145))],1,s(s(np(pn(terry)),vp(_7144,_7145)))) 
+ others: [] 
+ constrains: [(vp(vp(_7144,_7145))--->[tv(_7144),np(_7145)]),append([tv(_7144),np(_7145)],[],[tv(_7144),np(_7145)])] 
+ conseqvent: item([tv(_7144),np(_7145)],1,s(s(np(pn(terry)),vp(_7144,_7145)))) 
+predictor:
+ pivot: item([vp(vp(_7144))],1,s(s(np(pn(terry)),vp(_7144)))) 
+ others: [] 
+ constrains: [(vp(vp(_7144))--->[iv(_7144)]),append([iv(_7144)],[],[iv(_7144)])] 
+ conseqvent: item([iv(_7144)],1,s(s(np(pn(terry)),vp(_7144)))) 
+Adding to agenda: <-> item([tv(_6979),np(_6983)],1,s(s(np(pn(terry)),vp(_6979,_6983)))) 
+Adding to agenda: <-> item([iv(_6958)],1,s(s(np(pn(terry)),vp(_6958)))) 
+Adding to chart: <5> item([tv(_8105),np(_8109)],1,s(s(np(pn(terry)),vp(_8105,_8109)))) 
+scanner:
+ pivot: item([tv(tv(writes)),np(_8653)],1,s(s(np(pn(terry)),vp(tv(writes),_8653)))) 
+ others: [] 
+ constrains: [2 is 1+1,word(2,writes),lex(writes,tv(tv(writes)))] 
+ conseqvent: item([np(_8653)],2,s(s(np(pn(terry)),vp(tv(writes),_8653)))) 
+Adding to agenda: <-> item([np(_8587)],2,s(s(np(pn(terry)),vp(tv(writes),_8587)))) 
+Adding to chart: <5> item([iv(_9235)],1,s(s(np(pn(terry)),vp(_9235)))) 
+Adding to chart: <9> item([np(_9846)],2,s(s(np(pn(terry)),vp(tv(writes),_9846)))) 
+predictor:
+ pivot: item([np(np(_10516,_10517,_10518))],2,s(s(np(pn(terry)),vp(tv(writes),np(_10516,_10517,_10518))))) 
+ others: [] 
+ constrains: [(np(np(_10516,_10517,_10518))--->[det(_10516),n(_10517),optrel(_10518)]),append([det(_10516),n(_10517),optrel(_10518)],[],[det(_10516),n(_10517),optrel(_10518)])] 
+ conseqvent: item([det(_10516),n(_10517),optrel(_10518)],2,s(s(np(pn(terry)),vp(tv(writes),np(_10516,_10517,_10518))))) 
+predictor:
+ pivot: item([np(np(_10516))],2,s(s(np(pn(terry)),vp(tv(writes),np(_10516))))) 
+ others: [] 
+ constrains: [(np(np(_10516))--->[pn(_10516)]),append([pn(_10516)],[],[pn(_10516)])] 
+ conseqvent: item([pn(_10516)],2,s(s(np(pn(terry)),vp(tv(writes),np(_10516))))) 
+Adding to agenda: <-> item([det(_10351),n(_10355),optrel(_10359)],2,s(s(np(pn(terry)),vp(tv(writes),np(_10351,_10355,_10359))))) 
+Adding to agenda: <-> item([pn(_10325)],2,s(s(np(pn(terry)),vp(tv(writes),np(_10325))))) 
+Adding to chart: <1> item([det(_11519),n(_11523),optrel(_11527)],2,s(s(np(pn(terry)),vp(tv(writes),np(_11519,_11523,_11527))))) 
+scanner:
+ pivot: item([det(det(a)),n(_12097),optrel(_12101)],2,s(s(np(pn(terry)),vp(tv(writes),np(det(a),_12097,_12101))))) 
+ others: [] 
+ constrains: [3 is 2+1,word(3,a),lex(a,det(det(a)))] 
+ conseqvent: item([n(_12097),optrel(_12101)],3,s(s(np(pn(terry)),vp(tv(writes),np(det(a),_12097,_12101))))) 
+Adding to agenda: <-> item([n(_12031),optrel(_12035)],3,s(s(np(pn(terry)),vp(tv(writes),np(det(a),_12031,_12035))))) 
+Adding to chart: <3> item([pn(_12709)],2,s(s(np(pn(terry)),vp(tv(writes),np(_12709))))) 
+Adding to chart: <8> item([n(_13337),optrel(_13341)],3,s(s(np(pn(terry)),vp(tv(writes),np(det(a),_13337,_13341))))) 
+scanner:
+ pivot: item([n(n(program)),optrel(_13912)],3,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),_13912))))) 
+ others: [] 
+ constrains: [4 is 3+1,word(4,program),lex(program,n(n(program)))] 
+ conseqvent: item([optrel(_13912)],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),_13912))))) 
+Adding to agenda: <-> item([optrel(_13846)],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),_13846))))) 
+Adding to chart: <2> item([optrel(_14521)],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),_14521))))) 
+predictor:
+ pivot: item([optrel(rel(that,_15227))],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,_15227)))))) 
+ others: [] 
+ constrains: [(optrel(rel(that,_15227))--->[relpro,vp(_15227)]),append([relpro,vp(_15227)],[],[relpro,vp(_15227)])] 
+ conseqvent: item([relpro,vp(_15227)],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,_15227)))))) 
+predictor:
+ pivot: item([optrel(rel(epsilon))],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(epsilon)))))) 
+ others: [] 
+ constrains: [(optrel(rel(epsilon))--->[]),append([],[],[])] 
+ conseqvent: item([],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(epsilon)))))) 
+Adding to agenda: <-> item([relpro,vp(_15059)],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,_15059)))))) 
+Adding to agenda: <-> item([],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(epsilon)))))) 
+Adding to chart: <0> item([relpro,vp(_16227)],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,_16227)))))) 
+scanner:
+ pivot: item([relpro,vp(_16806)],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,_16806)))))) 
+ others: [] 
+ constrains: [5 is 4+1,word(5,that),lex(that,relpro)] 
+ conseqvent: item([vp(_16806)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,_16806)))))) 
+Adding to agenda: <-> item([vp(_16742)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,_16742)))))) 
+Adding to chart: <9> item([],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(epsilon)))))) 
+Adding to chart: <8> item([vp(_18054)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,_18054)))))) 
+predictor:
+ pivot: item([vp(vp(_18772,_18773))],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(_18772,_18773))))))) 
+ others: [] 
+ constrains: [(vp(vp(_18772,_18773))--->[tv(_18772),np(_18773)]),append([tv(_18772),np(_18773)],[],[tv(_18772),np(_18773)])] 
+ conseqvent: item([tv(_18772),np(_18773)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(_18772,_18773))))))) 
+predictor:
+ pivot: item([vp(vp(_18772))],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(_18772))))))) 
+ others: [] 
+ constrains: [(vp(vp(_18772))--->[iv(_18772)]),append([iv(_18772)],[],[iv(_18772)])] 
+ conseqvent: item([iv(_18772)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(_18772))))))) 
+Adding to agenda: <-> item([tv(_18607),np(_18611)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(_18607,_18611))))))) 
+Adding to agenda: <-> item([iv(_18570)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(_18570))))))) 
+Adding to chart: <0> item([tv(_19825),np(_19829)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(_19825,_19829))))))) 
+Adding to chart: <0> item([iv(_20503)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(_20503))))))) 
+scanner:
+ pivot: item([iv(iv(halts))],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(iv(halts)))))))) 
+ others: [] 
+ constrains: [6 is 5+1,word(6,halts),lex(halts,iv(iv(halts)))] 
+ conseqvent: item([],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(iv(halts)))))))) 
+Adding to agenda: <-> item([],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(iv(halts)))))))) 
+Adding to chart: <0> item([],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(iv(halts)))))))) 
+
+   arb.synt.=  s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(iv(halts)))))))
+
+  prop=    [shrdlu,writes,a,program,.]
+Adding to agenda: <-> item([s(_1356)],0,s(_1356)) 
+Adding to chart: <2> item([s(_1974)],0,s(_1974)) 
+predictor:
+ pivot: item([s(s(_2587,_2588))],0,s(s(_2587,_2588))) 
+ others: [] 
+ constrains: [(s(s(_2587,_2588))--->[np(_2587),vp(_2588)]),append([np(_2587),vp(_2588)],[],[np(_2587),vp(_2588)])] 
+ conseqvent: item([np(_2587),vp(_2588)],0,s(s(_2587,_2588))) 
+Adding to agenda: <-> item([np(_2410),vp(_2414)],0,s(s(_2410,_2414))) 
+Adding to chart: <1> item([np(_3037),vp(_3041)],0,s(s(_3037,_3041))) 
+predictor:
+ pivot: item([np(np(_3681,_3682,_3683)),vp(_3561)],0,s(s(np(_3681,_3682,_3683),_3561))) 
+ others: [] 
+ constrains: [(np(np(_3681,_3682,_3683))--->[det(_3681),n(_3682),optrel(_3683)]),append([det(_3681),n(_3682),optrel(_3683)],[vp(_3561)],[det(_3681),n(_3682),optrel(_3683),vp(_3561)])] 
+ conseqvent: item([det(_3681),n(_3682),optrel(_3683),vp(_3561)],0,s(s(np(_3681,_3682,_3683),_3561))) 
+predictor:
+ pivot: item([np(np(_3681)),vp(_3561)],0,s(s(np(_3681),_3561))) 
+ others: [] 
+ constrains: [(np(np(_3681))--->[pn(_3681)]),append([pn(_3681)],[vp(_3561)],[pn(_3681),vp(_3561)])] 
+ conseqvent: item([pn(_3681),vp(_3561)],0,s(s(np(_3681),_3561))) 
+Adding to agenda: <-> item([det(_3516),n(_3520),optrel(_3524),vp(_3528)],0,s(s(np(_3516,_3520,_3524),_3528))) 
+Adding to agenda: <-> item([pn(_3495),vp(_3499)],0,s(s(np(_3495),_3499))) 
+Adding to chart: <0> item([det(_4647),n(_4651),optrel(_4655),vp(_4659)],0,s(s(np(_4647,_4651,_4655),_4659))) 
+Adding to chart: <5> item([pn(_5280),vp(_5284)],0,s(s(np(_5280),_5284))) 
+scanner:
+ pivot: item([pn(pn(shrdlu)),vp(_5811)],0,s(s(np(pn(shrdlu)),_5811))) 
+ others: [] 
+ constrains: [1 is 0+1,word(1,shrdlu),lex(shrdlu,pn(pn(shrdlu)))] 
+ conseqvent: item([vp(_5811)],1,s(s(np(pn(shrdlu)),_5811))) 
+Adding to agenda: <-> item([vp(_5745)],1,s(s(np(pn(shrdlu)),_5745))) 
+Adding to chart: <1> item([vp(_6376)],1,s(s(np(pn(shrdlu)),_6376))) 
+predictor:
+ pivot: item([vp(vp(_7024,_7025))],1,s(s(np(pn(shrdlu)),vp(_7024,_7025)))) 
+ others: [] 
+ constrains: [(vp(vp(_7024,_7025))--->[tv(_7024),np(_7025)]),append([tv(_7024),np(_7025)],[],[tv(_7024),np(_7025)])] 
+ conseqvent: item([tv(_7024),np(_7025)],1,s(s(np(pn(shrdlu)),vp(_7024,_7025)))) 
+predictor:
+ pivot: item([vp(vp(_7024))],1,s(s(np(pn(shrdlu)),vp(_7024)))) 
+ others: [] 
+ constrains: [(vp(vp(_7024))--->[iv(_7024)]),append([iv(_7024)],[],[iv(_7024)])] 
+ conseqvent: item([iv(_7024)],1,s(s(np(pn(shrdlu)),vp(_7024)))) 
+Adding to agenda: <-> item([tv(_6859),np(_6863)],1,s(s(np(pn(shrdlu)),vp(_6859,_6863)))) 
+Adding to agenda: <-> item([iv(_6838)],1,s(s(np(pn(shrdlu)),vp(_6838)))) 
+Adding to chart: <5> item([tv(_7985),np(_7989)],1,s(s(np(pn(shrdlu)),vp(_7985,_7989)))) 
+scanner:
+ pivot: item([tv(tv(writes)),np(_8533)],1,s(s(np(pn(shrdlu)),vp(tv(writes),_8533)))) 
+ others: [] 
+ constrains: [2 is 1+1,word(2,writes),lex(writes,tv(tv(writes)))] 
+ conseqvent: item([np(_8533)],2,s(s(np(pn(shrdlu)),vp(tv(writes),_8533)))) 
+Adding to agenda: <-> item([np(_8467)],2,s(s(np(pn(shrdlu)),vp(tv(writes),_8467)))) 
+Adding to chart: <5> item([iv(_9115)],1,s(s(np(pn(shrdlu)),vp(_9115)))) 
+Adding to chart: <9> item([np(_9726)],2,s(s(np(pn(shrdlu)),vp(tv(writes),_9726)))) 
+predictor:
+ pivot: item([np(np(_10396,_10397,_10398))],2,s(s(np(pn(shrdlu)),vp(tv(writes),np(_10396,_10397,_10398))))) 
+ others: [] 
+ constrains: [(np(np(_10396,_10397,_10398))--->[det(_10396),n(_10397),optrel(_10398)]),append([det(_10396),n(_10397),optrel(_10398)],[],[det(_10396),n(_10397),optrel(_10398)])] 
+ conseqvent: item([det(_10396),n(_10397),optrel(_10398)],2,s(s(np(pn(shrdlu)),vp(tv(writes),np(_10396,_10397,_10398))))) 
+predictor:
+ pivot: item([np(np(_10396))],2,s(s(np(pn(shrdlu)),vp(tv(writes),np(_10396))))) 
+ others: [] 
+ constrains: [(np(np(_10396))--->[pn(_10396)]),append([pn(_10396)],[],[pn(_10396)])] 
+ conseqvent: item([pn(_10396)],2,s(s(np(pn(shrdlu)),vp(tv(writes),np(_10396))))) 
+Adding to agenda: <-> item([det(_10231),n(_10235),optrel(_10239)],2,s(s(np(pn(shrdlu)),vp(tv(writes),np(_10231,_10235,_10239))))) 
+Adding to agenda: <-> item([pn(_10205)],2,s(s(np(pn(shrdlu)),vp(tv(writes),np(_10205))))) 
+Adding to chart: <1> item([det(_11399),n(_11403),optrel(_11407)],2,s(s(np(pn(shrdlu)),vp(tv(writes),np(_11399,_11403,_11407))))) 
+scanner:
+ pivot: item([det(det(a)),n(_11977),optrel(_11981)],2,s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),_11977,_11981))))) 
+ others: [] 
+ constrains: [3 is 2+1,word(3,a),lex(a,det(det(a)))] 
+ conseqvent: item([n(_11977),optrel(_11981)],3,s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),_11977,_11981))))) 
+Adding to agenda: <-> item([n(_11911),optrel(_11915)],3,s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),_11911,_11915))))) 
+Adding to chart: <3> item([pn(_12589)],2,s(s(np(pn(shrdlu)),vp(tv(writes),np(_12589))))) 
+Adding to chart: <8> item([n(_13217),optrel(_13221)],3,s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),_13217,_13221))))) 
+scanner:
+ pivot: item([n(n(program)),optrel(_13792)],3,s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),n(program),_13792))))) 
+ others: [] 
+ constrains: [4 is 3+1,word(4,program),lex(program,n(n(program)))] 
+ conseqvent: item([optrel(_13792)],4,s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),n(program),_13792))))) 
+Adding to agenda: <-> item([optrel(_13726)],4,s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),n(program),_13726))))) 
+Adding to chart: <2> item([optrel(_14401)],4,s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),n(program),_14401))))) 
+predictor:
+ pivot: item([optrel(rel(that,_15107))],4,s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),n(program),rel(that,_15107)))))) 
+ others: [] 
+ constrains: [(optrel(rel(that,_15107))--->[relpro,vp(_15107)]),append([relpro,vp(_15107)],[],[relpro,vp(_15107)])] 
+ conseqvent: item([relpro,vp(_15107)],4,s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),n(program),rel(that,_15107)))))) 
+predictor:
+ pivot: item([optrel(rel(epsilon))],4,s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),n(program),rel(epsilon)))))) 
+ others: [] 
+ constrains: [(optrel(rel(epsilon))--->[]),append([],[],[])] 
+ conseqvent: item([],4,s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),n(program),rel(epsilon)))))) 
+Adding to agenda: <-> item([relpro,vp(_14939)],4,s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),n(program),rel(that,_14939)))))) 
+Adding to agenda: <-> item([],4,s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),n(program),rel(epsilon)))))) 
+Adding to chart: <0> item([relpro,vp(_16107)],4,s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),n(program),rel(that,_16107)))))) 
+Adding to chart: <9> item([],4,s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),n(program),rel(epsilon)))))) 
+
+   arb.synt.=  s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),n(program),rel(epsilon)))))
+
+  prop=    [terry,writes,a,program,that,has,an,error,.]
+Adding to agenda: <-> item([s(_1596)],0,s(_1596)) 
+Adding to chart: <2> item([s(_2214)],0,s(_2214)) 
+predictor:
+ pivot: item([s(s(_2827,_2828))],0,s(s(_2827,_2828))) 
+ others: [] 
+ constrains: [(s(s(_2827,_2828))--->[np(_2827),vp(_2828)]),append([np(_2827),vp(_2828)],[],[np(_2827),vp(_2828)])] 
+ conseqvent: item([np(_2827),vp(_2828)],0,s(s(_2827,_2828))) 
+Adding to agenda: <-> item([np(_2650),vp(_2654)],0,s(s(_2650,_2654))) 
+Adding to chart: <1> item([np(_3277),vp(_3281)],0,s(s(_3277,_3281))) 
+predictor:
+ pivot: item([np(np(_3921,_3922,_3923)),vp(_3801)],0,s(s(np(_3921,_3922,_3923),_3801))) 
+ others: [] 
+ constrains: [(np(np(_3921,_3922,_3923))--->[det(_3921),n(_3922),optrel(_3923)]),append([det(_3921),n(_3922),optrel(_3923)],[vp(_3801)],[det(_3921),n(_3922),optrel(_3923),vp(_3801)])] 
+ conseqvent: item([det(_3921),n(_3922),optrel(_3923),vp(_3801)],0,s(s(np(_3921,_3922,_3923),_3801))) 
+predictor:
+ pivot: item([np(np(_3921)),vp(_3801)],0,s(s(np(_3921),_3801))) 
+ others: [] 
+ constrains: [(np(np(_3921))--->[pn(_3921)]),append([pn(_3921)],[vp(_3801)],[pn(_3921),vp(_3801)])] 
+ conseqvent: item([pn(_3921),vp(_3801)],0,s(s(np(_3921),_3801))) 
+Adding to agenda: <-> item([det(_3756),n(_3760),optrel(_3764),vp(_3768)],0,s(s(np(_3756,_3760,_3764),_3768))) 
+Adding to agenda: <-> item([pn(_3735),vp(_3739)],0,s(s(np(_3735),_3739))) 
+Adding to chart: <0> item([det(_4887),n(_4891),optrel(_4895),vp(_4899)],0,s(s(np(_4887,_4891,_4895),_4899))) 
+Adding to chart: <5> item([pn(_5520),vp(_5524)],0,s(s(np(_5520),_5524))) 
+scanner:
+ pivot: item([pn(pn(terry)),vp(_6051)],0,s(s(np(pn(terry)),_6051))) 
+ others: [] 
+ constrains: [1 is 0+1,word(1,terry),lex(terry,pn(pn(terry)))] 
+ conseqvent: item([vp(_6051)],1,s(s(np(pn(terry)),_6051))) 
+Adding to agenda: <-> item([vp(_5985)],1,s(s(np(pn(terry)),_5985))) 
+Adding to chart: <1> item([vp(_6616)],1,s(s(np(pn(terry)),_6616))) 
+predictor:
+ pivot: item([vp(vp(_7264,_7265))],1,s(s(np(pn(terry)),vp(_7264,_7265)))) 
+ others: [] 
+ constrains: [(vp(vp(_7264,_7265))--->[tv(_7264),np(_7265)]),append([tv(_7264),np(_7265)],[],[tv(_7264),np(_7265)])] 
+ conseqvent: item([tv(_7264),np(_7265)],1,s(s(np(pn(terry)),vp(_7264,_7265)))) 
+predictor:
+ pivot: item([vp(vp(_7264))],1,s(s(np(pn(terry)),vp(_7264)))) 
+ others: [] 
+ constrains: [(vp(vp(_7264))--->[iv(_7264)]),append([iv(_7264)],[],[iv(_7264)])] 
+ conseqvent: item([iv(_7264)],1,s(s(np(pn(terry)),vp(_7264)))) 
+Adding to agenda: <-> item([tv(_7099),np(_7103)],1,s(s(np(pn(terry)),vp(_7099,_7103)))) 
+Adding to agenda: <-> item([iv(_7078)],1,s(s(np(pn(terry)),vp(_7078)))) 
+Adding to chart: <5> item([tv(_8225),np(_8229)],1,s(s(np(pn(terry)),vp(_8225,_8229)))) 
+scanner:
+ pivot: item([tv(tv(writes)),np(_8773)],1,s(s(np(pn(terry)),vp(tv(writes),_8773)))) 
+ others: [] 
+ constrains: [2 is 1+1,word(2,writes),lex(writes,tv(tv(writes)))] 
+ conseqvent: item([np(_8773)],2,s(s(np(pn(terry)),vp(tv(writes),_8773)))) 
+Adding to agenda: <-> item([np(_8707)],2,s(s(np(pn(terry)),vp(tv(writes),_8707)))) 
+Adding to chart: <5> item([iv(_9355)],1,s(s(np(pn(terry)),vp(_9355)))) 
+Adding to chart: <9> item([np(_9966)],2,s(s(np(pn(terry)),vp(tv(writes),_9966)))) 
+predictor:
+ pivot: item([np(np(_10636,_10637,_10638))],2,s(s(np(pn(terry)),vp(tv(writes),np(_10636,_10637,_10638))))) 
+ others: [] 
+ constrains: [(np(np(_10636,_10637,_10638))--->[det(_10636),n(_10637),optrel(_10638)]),append([det(_10636),n(_10637),optrel(_10638)],[],[det(_10636),n(_10637),optrel(_10638)])] 
+ conseqvent: item([det(_10636),n(_10637),optrel(_10638)],2,s(s(np(pn(terry)),vp(tv(writes),np(_10636,_10637,_10638))))) 
+predictor:
+ pivot: item([np(np(_10636))],2,s(s(np(pn(terry)),vp(tv(writes),np(_10636))))) 
+ others: [] 
+ constrains: [(np(np(_10636))--->[pn(_10636)]),append([pn(_10636)],[],[pn(_10636)])] 
+ conseqvent: item([pn(_10636)],2,s(s(np(pn(terry)),vp(tv(writes),np(_10636))))) 
+Adding to agenda: <-> item([det(_10471),n(_10475),optrel(_10479)],2,s(s(np(pn(terry)),vp(tv(writes),np(_10471,_10475,_10479))))) 
+Adding to agenda: <-> item([pn(_10445)],2,s(s(np(pn(terry)),vp(tv(writes),np(_10445))))) 
+Adding to chart: <1> item([det(_11639),n(_11643),optrel(_11647)],2,s(s(np(pn(terry)),vp(tv(writes),np(_11639,_11643,_11647))))) 
+scanner:
+ pivot: item([det(det(a)),n(_12217),optrel(_12221)],2,s(s(np(pn(terry)),vp(tv(writes),np(det(a),_12217,_12221))))) 
+ others: [] 
+ constrains: [3 is 2+1,word(3,a),lex(a,det(det(a)))] 
+ conseqvent: item([n(_12217),optrel(_12221)],3,s(s(np(pn(terry)),vp(tv(writes),np(det(a),_12217,_12221))))) 
+Adding to agenda: <-> item([n(_12151),optrel(_12155)],3,s(s(np(pn(terry)),vp(tv(writes),np(det(a),_12151,_12155))))) 
+Adding to chart: <3> item([pn(_12829)],2,s(s(np(pn(terry)),vp(tv(writes),np(_12829))))) 
+Adding to chart: <8> item([n(_13457),optrel(_13461)],3,s(s(np(pn(terry)),vp(tv(writes),np(det(a),_13457,_13461))))) 
+scanner:
+ pivot: item([n(n(program)),optrel(_14032)],3,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),_14032))))) 
+ others: [] 
+ constrains: [4 is 3+1,word(4,program),lex(program,n(n(program)))] 
+ conseqvent: item([optrel(_14032)],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),_14032))))) 
+Adding to agenda: <-> item([optrel(_13966)],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),_13966))))) 
+Adding to chart: <2> item([optrel(_14641)],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),_14641))))) 
+predictor:
+ pivot: item([optrel(rel(that,_15347))],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,_15347)))))) 
+ others: [] 
+ constrains: [(optrel(rel(that,_15347))--->[relpro,vp(_15347)]),append([relpro,vp(_15347)],[],[relpro,vp(_15347)])] 
+ conseqvent: item([relpro,vp(_15347)],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,_15347)))))) 
+predictor:
+ pivot: item([optrel(rel(epsilon))],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(epsilon)))))) 
+ others: [] 
+ constrains: [(optrel(rel(epsilon))--->[]),append([],[],[])] 
+ conseqvent: item([],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(epsilon)))))) 
+Adding to agenda: <-> item([relpro,vp(_15179)],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,_15179)))))) 
+Adding to agenda: <-> item([],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(epsilon)))))) 
+Adding to chart: <0> item([relpro,vp(_16347)],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,_16347)))))) 
+scanner:
+ pivot: item([relpro,vp(_16926)],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,_16926)))))) 
+ others: [] 
+ constrains: [5 is 4+1,word(5,that),lex(that,relpro)] 
+ conseqvent: item([vp(_16926)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,_16926)))))) 
+Adding to agenda: <-> item([vp(_16862)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,_16862)))))) 
+Adding to chart: <9> item([],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(epsilon)))))) 
+Adding to chart: <8> item([vp(_18174)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,_18174)))))) 
+predictor:
+ pivot: item([vp(vp(_18892,_18893))],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(_18892,_18893))))))) 
+ others: [] 
+ constrains: [(vp(vp(_18892,_18893))--->[tv(_18892),np(_18893)]),append([tv(_18892),np(_18893)],[],[tv(_18892),np(_18893)])] 
+ conseqvent: item([tv(_18892),np(_18893)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(_18892,_18893))))))) 
+predictor:
+ pivot: item([vp(vp(_18892))],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(_18892))))))) 
+ others: [] 
+ constrains: [(vp(vp(_18892))--->[iv(_18892)]),append([iv(_18892)],[],[iv(_18892)])] 
+ conseqvent: item([iv(_18892)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(_18892))))))) 
+Adding to agenda: <-> item([tv(_18727),np(_18731)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(_18727,_18731))))))) 
+Adding to agenda: <-> item([iv(_18690)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(_18690))))))) 
+Adding to chart: <0> item([tv(_19945),np(_19949)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(_19945,_19949))))))) 
+scanner:
+ pivot: item([tv(tv(has)),np(_20547)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),_20547))))))) 
+ others: [] 
+ constrains: [6 is 5+1,word(6,has),lex(has,tv(tv(has)))] 
+ conseqvent: item([np(_20547)],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),_20547))))))) 
+Adding to agenda: <-> item([np(_20481)],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),_20481))))))) 
+Adding to chart: <0> item([iv(_21183)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(_21183))))))) 
+Adding to chart: <0> item([np(_21848)],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),_21848))))))) 
+predictor:
+ pivot: item([np(np(_22588,_22589,_22590))],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(_22588,_22589,_22590)))))))) 
+ others: [] 
+ constrains: [(np(np(_22588,_22589,_22590))--->[det(_22588),n(_22589),optrel(_22590)]),append([det(_22588),n(_22589),optrel(_22590)],[],[det(_22588),n(_22589),optrel(_22590)])] 
+ conseqvent: item([det(_22588),n(_22589),optrel(_22590)],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(_22588,_22589,_22590)))))))) 
+predictor:
+ pivot: item([np(np(_22588))],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(_22588)))))))) 
+ others: [] 
+ constrains: [(np(np(_22588))--->[pn(_22588)]),append([pn(_22588)],[],[pn(_22588)])] 
+ conseqvent: item([pn(_22588)],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(_22588)))))))) 
+Adding to agenda: <-> item([det(_22423),n(_22427),optrel(_22431)],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(_22423,_22427,_22431)))))))) 
+Adding to agenda: <-> item([pn(_22381)],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(_22381)))))))) 
+Adding to chart: <6> item([det(_23683),n(_23687),optrel(_23691)],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(_23683,_23687,_23691)))))))) 
+scanner:
+ pivot: item([det(det(an)),n(_24315),optrel(_24319)],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),_24315,_24319)))))))) 
+ others: [] 
+ constrains: [7 is 6+1,word(7,an),lex(an,det(det(an)))] 
+ conseqvent: item([n(_24315),optrel(_24319)],7,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),_24315,_24319)))))))) 
+Adding to agenda: <-> item([n(_24249),optrel(_24253)],7,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),_24249,_24253)))))))) 
+Adding to chart: <4> item([pn(_24981)],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(_24981)))))))) 
+Adding to chart: <9> item([n(_25663),optrel(_25667)],7,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),_25663,_25667)))))))) 
+scanner:
+ pivot: item([n(n(error)),optrel(_26292)],7,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),_26292)))))))) 
+ others: [] 
+ constrains: [8 is 7+1,word(8,error),lex(error,n(n(error)))] 
+ conseqvent: item([optrel(_26292)],8,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),_26292)))))))) 
+Adding to agenda: <-> item([optrel(_26226)],8,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),_26226)))))))) 
+Adding to chart: <4> item([optrel(_26955)],8,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),_26955)))))))) 
+predictor:
+ pivot: item([optrel(rel(that,_27731))],8,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),rel(that,_27731))))))))) 
+ others: [] 
+ constrains: [(optrel(rel(that,_27731))--->[relpro,vp(_27731)]),append([relpro,vp(_27731)],[],[relpro,vp(_27731)])] 
+ conseqvent: item([relpro,vp(_27731)],8,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),rel(that,_27731))))))))) 
+predictor:
+ pivot: item([optrel(rel(epsilon))],8,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),rel(epsilon))))))))) 
+ others: [] 
+ constrains: [(optrel(rel(epsilon))--->[]),append([],[],[])] 
+ conseqvent: item([],8,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),rel(epsilon))))))))) 
+Adding to agenda: <-> item([relpro,vp(_27563)],8,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),rel(that,_27563))))))))) 
+Adding to agenda: <-> item([],8,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),rel(epsilon))))))))) 
+Adding to chart: <6> item([relpro,vp(_28823)],8,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),rel(that,_28823))))))))) 
+Adding to chart: <0> item([],8,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),rel(epsilon))))))))) 
+
+   arb.synt.=  s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),rel(epsilon))))))))
+
+word(1, terry).
+word(2, writes).
+word(3, a).
+word(4, program).
+word(5, that).
+word(6, has).
+word(7, an).
+word(8, error).
+
+stored(0, item([s(A)],0,s(A))).
+stored(1, item([np(A),vp(B)],0,s(s(A,B)))).
+stored(2, item([det(A),n(B),optrel(C),vp(D)],0,s(s(np(A,B,C),D)))).
+stored(3, item([pn(A),vp(B)],0,s(s(np(A),B)))).
+stored(4, item([vp(A)],1,s(s(np(pn(terry)),A)))).
+stored(5, item([tv(A),np(B)],1,s(s(np(pn(terry)),vp(A,B))))).
+stored(6, item([iv(A)],1,s(s(np(pn(terry)),vp(A))))).
+stored(7, item([np(A)],2,s(s(np(pn(terry)),vp(tv(writes),A))))).
+stored(8, item([det(A),n(B),optrel(C)],2,s(s(np(pn(terry)),vp(tv(writes),np(A,B,C)))))).
+stored(9, item([pn(A)],2,s(s(np(pn(terry)),vp(tv(writes),np(A)))))).
+stored(10, item([n(A),optrel(B)],3,s(s(np(pn(terry)),vp(tv(writes),np(det(a),A,B)))))).
+stored(11, item([optrel(A)],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),A)))))).
+stored(12, item([relpro,vp(A)],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,A))))))).
+stored(13, item([],4,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(epsilon))))))).
+stored(14, item([vp(A)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,A))))))).
+stored(15, item([tv(A),np(B)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(A,B)))))))).
+stored(16, item([iv(A)],5,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(A)))))))).
+stored(17, item([np(A)],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),A)))))))).
+stored(18, item([det(A),n(B),optrel(C)],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(A,B,C))))))))).
+stored(19, item([pn(A)],6,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(A))))))))).
+stored(20, item([n(A),optrel(B)],7,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),A,B))))))))).
+stored(21, item([optrel(A)],8,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),A))))))))).
+stored(22, item([relpro,vp(A)],8,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),rel(that,A)))))))))).
+stored(23, item([],8,s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),rel(epsilon)))))))))).
+
+key_index(2, 0).
+key_index(1, 1).
+key_index(0, 2).
+key_index(5, 3).
+key_index(1, 4).
+key_index(5, 5).
+key_index(5, 6).
+key_index(9, 7).
+key_index(1, 8).
+key_index(3, 9).
+key_index(8, 10).
+key_index(2, 11).
+key_index(0, 12).
+key_index(9, 13).
+key_index(8, 14).
+key_index(0, 15).
+key_index(0, 16).
+key_index(0, 17).
+key_index(6, 18).
+key_index(4, 19).
+key_index(9, 20).
+key_index(4, 21).
+key_index(6, 22).
+key_index(0, 23).
+
+
+
+all solutions in 0.030 seconds.

@@ -1,0 +1,15 @@
+
+
+  prop=    [terry,writes,a,program,that,halts,.]
+
+   arb.synt.=  s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(iv(halts)))))))
+
+  prop=    [shrdlu,writes,a,program,.]
+
+   arb.synt.=  s(s(np(pn(shrdlu)),vp(tv(writes),np(det(a),n(program),rel(epsilon)))))
+
+  prop=    [terry,writes,a,program,that,has,an,error,.]
+
+   arb.synt.=  s(s(np(pn(terry)),vp(tv(writes),np(det(a),n(program),rel(that,vp(tv(has),np(det(an),n(error),rel(epsilon))))))))
+
+all solutions in 0.000 seconds.

@@ -1,0 +1,137 @@
+
+
+  prop=    [acest,frumos,baiat,vede,un,pletos,ciine,.]
+Adding to agenda: <-> item(det(det(acest)),0,1) 
+Adding to agenda: <-> item(adj(adj(frumos)),1,2) 
+Adding to agenda: <-> item(n(n(baiat)),2,3) 
+Adding to agenda: <-> item(v(v(vede)),3,4) 
+Adding to agenda: <-> item(det(det(un)),4,5) 
+Adding to agenda: <-> item(adj(adj(pletos)),5,6) 
+Adding to agenda: <-> item(n(n(ciine)),6,7) 
+Adding to chart: <6> item(det(det(acest)),0,1) 
+Adding to chart: <2> item(adj(adj(frumos)),1,2) 
+Adding to chart: <7> item(n(n(baiat)),2,3) 
+cyk1:
+ pivot: item(n(n(baiat)),2,3) 
+ others: [] 
+ constrains: [(np2(np2(n(baiat)))--->[n(n(baiat))])] 
+ conseqvent: item(np2(np2(n(baiat))),2,3) 
+Adding to agenda: <-> item(np2(np2(n(baiat))),2,3) 
+Adding to chart: <3> item(v(v(vede)),3,4) 
+cyk1:
+ pivot: item(v(v(vede)),3,4) 
+ others: [] 
+ constrains: [(vp(vp(v(vede)))--->[v(v(vede))])] 
+ conseqvent: item(vp(vp(v(vede))),3,4) 
+Adding to agenda: <-> item(vp(vp(v(vede))),3,4) 
+Adding to chart: <5> item(det(det(un)),4,5) 
+Adding to chart: <3> item(adj(adj(pletos)),5,6) 
+Adding to chart: <6> item(n(n(ciine)),6,7) 
+cyk1:
+ pivot: item(n(n(ciine)),6,7) 
+ others: [] 
+ constrains: [(np2(np2(n(ciine)))--->[n(n(ciine))])] 
+ conseqvent: item(np2(np2(n(ciine))),6,7) 
+Adding to agenda: <-> item(np2(np2(n(ciine))),6,7) 
+Adding to chart: <7> item(np2(np2(n(baiat))),2,3) 
+cyk2:
+ pivot: item(np2(np2(n(baiat))),2,3) 
+ others: [item(adj(adj(frumos)),1,2)] 
+ constrains: [nonvar(adj(adj(frumos))),nonvar(np2(np2(n(baiat)))),(np2(np2(adj(frumos),np2(n(baiat))))--->[adj(adj(frumos)),np2(np2(n(baiat)))])] 
+ conseqvent: item(np2(np2(adj(frumos),np2(n(baiat)))),1,3) 
+Adding to agenda: <-> item(np2(np2(adj(frumos),np2(n(baiat)))),1,3) 
+Adding to chart: <3> item(vp(vp(v(vede))),3,4) 
+Adding to chart: <6> item(np2(np2(n(ciine))),6,7) 
+cyk2:
+ pivot: item(np2(np2(n(ciine))),6,7) 
+ others: [item(adj(adj(pletos)),5,6)] 
+ constrains: [nonvar(adj(adj(pletos))),nonvar(np2(np2(n(ciine)))),(np2(np2(adj(pletos),np2(n(ciine))))--->[adj(adj(pletos)),np2(np2(n(ciine)))])] 
+ conseqvent: item(np2(np2(adj(pletos),np2(n(ciine)))),5,7) 
+Adding to agenda: <-> item(np2(np2(adj(pletos),np2(n(ciine)))),5,7) 
+Adding to chart: <2> item(np2(np2(adj(frumos),np2(n(baiat)))),1,3) 
+cyk2:
+ pivot: item(np2(np2(adj(frumos),np2(n(baiat)))),1,3) 
+ others: [item(det(det(acest)),0,1)] 
+ constrains: [nonvar(det(det(acest))),nonvar(np2(np2(adj(frumos),np2(n(baiat))))),(np(np(det(acest),np2(adj(frumos),np2(n(baiat)))))--->[det(det(acest)),np2(np2(adj(frumos),np2(n(baiat))))])] 
+ conseqvent: item(np(np(det(acest),np2(adj(frumos),np2(n(baiat))))),0,3) 
+Adding to agenda: <-> item(np(np(det(acest),np2(adj(frumos),np2(n(baiat))))),0,3) 
+Adding to chart: <3> item(np2(np2(adj(pletos),np2(n(ciine)))),5,7) 
+cyk2:
+ pivot: item(np2(np2(adj(pletos),np2(n(ciine)))),5,7) 
+ others: [item(det(det(un)),4,5)] 
+ constrains: [nonvar(det(det(un))),nonvar(np2(np2(adj(pletos),np2(n(ciine))))),(np(np(det(un),np2(adj(pletos),np2(n(ciine)))))--->[det(det(un)),np2(np2(adj(pletos),np2(n(ciine))))])] 
+ conseqvent: item(np(np(det(un),np2(adj(pletos),np2(n(ciine))))),4,7) 
+Adding to agenda: <-> item(np(np(det(un),np2(adj(pletos),np2(n(ciine))))),4,7) 
+Adding to chart: <0> item(np(np(det(acest),np2(adj(frumos),np2(n(baiat))))),0,3) 
+cyk2:
+ pivot: item(np(np(det(acest),np2(adj(frumos),np2(n(baiat))))),0,3) 
+ others: [item(vp(vp(v(vede))),3,4)] 
+ constrains: [nonvar(np(np(det(acest),np2(adj(frumos),np2(n(baiat)))))),nonvar(vp(vp(v(vede)))),(s(s(np(det(acest),np2(adj(frumos),np2(n(baiat)))),vp(v(vede))))--->[np(np(det(acest),np2(adj(frumos),np2(n(baiat))))),vp(vp(v(vede)))])] 
+ conseqvent: item(s(s(np(det(acest),np2(adj(frumos),np2(n(baiat)))),vp(v(vede)))),0,4) 
+Adding to agenda: <-> item(s(s(np(det(acest),np2(adj(frumos),np2(n(baiat)))),vp(v(vede)))),0,4) 
+Adding to chart: <9> item(np(np(det(un),np2(adj(pletos),np2(n(ciine))))),4,7) 
+cyk2:
+ pivot: item(np(np(det(un),np2(adj(pletos),np2(n(ciine))))),4,7) 
+ others: [item(v(v(vede)),3,4)] 
+ constrains: [nonvar(v(v(vede))),nonvar(np(np(det(un),np2(adj(pletos),np2(n(ciine)))))),(vp(vp(v(vede),np(det(un),np2(adj(pletos),np2(n(ciine))))))--->[v(v(vede)),np(np(det(un),np2(adj(pletos),np2(n(ciine)))))])] 
+ conseqvent: item(vp(vp(v(vede),np(det(un),np2(adj(pletos),np2(n(ciine)))))),3,7) 
+Adding to agenda: <-> item(vp(vp(v(vede),np(det(un),np2(adj(pletos),np2(n(ciine)))))),3,7) 
+Adding to chart: <7> item(s(s(np(det(acest),np2(adj(frumos),np2(n(baiat)))),vp(v(vede)))),0,4) 
+Adding to chart: <1> item(vp(vp(v(vede),np(det(un),np2(adj(pletos),np2(n(ciine)))))),3,7) 
+cyk2:
+ pivot: item(vp(vp(v(vede),np(det(un),np2(adj(pletos),np2(n(ciine)))))),3,7) 
+ others: [item(np(np(det(acest),np2(adj(frumos),np2(n(baiat))))),0,3)] 
+ constrains: [nonvar(np(np(det(acest),np2(adj(frumos),np2(n(baiat)))))),nonvar(vp(vp(v(vede),np(det(un),np2(adj(pletos),np2(n(ciine))))))),(s(s(np(det(acest),np2(adj(frumos),np2(n(baiat)))),vp(v(vede),np(det(un),np2(adj(pletos),np2(n(ciine)))))))--->[np(np(det(acest),np2(adj(frumos),np2(n(baiat))))),vp(vp(v(vede),np(det(un),np2(adj(pletos),np2(n(ciine))))))])] 
+ conseqvent: item(s(s(np(det(acest),np2(adj(frumos),np2(n(baiat)))),vp(v(vede),np(det(un),np2(adj(pletos),np2(n(ciine))))))),0,7) 
+Adding to agenda: <-> item(s(s(np(det(acest),np2(adj(frumos),np2(n(baiat)))),vp(v(vede),np(det(un),np2(adj(pletos),np2(n(ciine))))))),0,7) 
+Adding to chart: <4> item(s(s(np(det(acest),np2(adj(frumos),np2(n(baiat)))),vp(v(vede),np(det(un),np2(adj(pletos),np2(n(ciine))))))),0,7) 
+
+   arb.synt.=  s(s(np(det(acest),np2(adj(frumos),np2(n(baiat)))),vp(v(vede),np(det(un),np2(adj(pletos),np2(n(ciine)))))))
+
+word(1, acest).
+word(2, frumos).
+word(3, baiat).
+word(4, vede).
+word(5, un).
+word(6, pletos).
+word(7, ciine).
+
+stored(0, item(det(det(acest)),0,1)).
+stored(1, item(adj(adj(frumos)),1,2)).
+stored(2, item(n(n(baiat)),2,3)).
+stored(3, item(v(v(vede)),3,4)).
+stored(4, item(det(det(un)),4,5)).
+stored(5, item(adj(adj(pletos)),5,6)).
+stored(6, item(n(n(ciine)),6,7)).
+stored(7, item(np2(np2(n(baiat))),2,3)).
+stored(8, item(vp(vp(v(vede))),3,4)).
+stored(9, item(np2(np2(n(ciine))),6,7)).
+stored(10, item(np2(np2(adj(frumos),np2(n(baiat)))),1,3)).
+stored(11, item(np2(np2(adj(pletos),np2(n(ciine)))),5,7)).
+stored(12, item(np(np(det(acest),np2(adj(frumos),np2(n(baiat))))),0,3)).
+stored(13, item(np(np(det(un),np2(adj(pletos),np2(n(ciine))))),4,7)).
+stored(14, item(s(s(np(det(acest),np2(adj(frumos),np2(n(baiat)))),vp(v(vede)))),0,4)).
+stored(15, item(vp(vp(v(vede),np(det(un),np2(adj(pletos),np2(n(ciine)))))),3,7)).
+stored(16, item(s(s(np(det(acest),np2(adj(frumos),np2(n(baiat)))),vp(v(vede),np(det(un),np2(adj(pletos),np2(n(ciine))))))),0,7)).
+
+key_index(6, 0).
+key_index(2, 1).
+key_index(7, 2).
+key_index(3, 3).
+key_index(5, 4).
+key_index(3, 5).
+key_index(6, 6).
+key_index(7, 7).
+key_index(3, 8).
+key_index(6, 9).
+key_index(2, 10).
+key_index(3, 11).
+key_index(0, 12).
+key_index(9, 13).
+key_index(7, 14).
+key_index(1, 15).
+key_index(4, 16).
+
+
+
+all solutions in 0.010 seconds.

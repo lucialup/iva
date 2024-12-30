@@ -1,0 +1,16 @@
+
+
+  prop=    [elephant,skin,desease,treatment,.]
+
+   arb.synt.=  nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(nc(n(desease)),nc(n(treatment)))))
+   arb.synt.=  nc(nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(n(desease))),nc(n(treatment))))
+   arb.synt.=  nc(nc(nc(n(elephant)),nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment)))))
+   arb.synt.=  nc(nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(n(desease)))),nc(n(treatment))))
+   arb.synt.=  nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment))))))
+
+  prop=    [skin,desease,treatment,.]
+
+   arb.synt.=  nc(nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment))))
+   arb.synt.=  nc(nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment)))))
+
+all solutions in 0.010 seconds.

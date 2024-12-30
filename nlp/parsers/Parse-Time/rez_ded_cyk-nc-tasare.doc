@@ -1,0 +1,219 @@
+
+
+  prop=    [elephant,skin,desease,treatment,.]
+Adding to agenda: <-> item(n(n(elephant)),0,1) 
+Adding to agenda: <-> item(n(n(skin)),1,2) 
+Adding to agenda: <-> item(n(n(desease)),2,3) 
+Adding to agenda: <-> item(n(n(treatment)),3,4) 
+Adding to chart: <6> item(n(n(elephant)),0,1) 
+cyk1:
+ pivot: item(n(n(elephant)),0,1) 
+ others: [] 
+ constrains: [(nc(nc(n(elephant)))--->[n(n(elephant))])] 
+ conseqvent: item(nc(nc(n(elephant))),0,1) 
+Adding to agenda: <-> item(nc(nc(n(elephant))),0,1) 
+Adding to chart: <2> item(n(n(skin)),1,2) 
+cyk1:
+ pivot: item(n(n(skin)),1,2) 
+ others: [] 
+ constrains: [(nc(nc(n(skin)))--->[n(n(skin))])] 
+ conseqvent: item(nc(nc(n(skin))),1,2) 
+Adding to agenda: <-> item(nc(nc(n(skin))),1,2) 
+Adding to chart: <7> item(n(n(desease)),2,3) 
+cyk1:
+ pivot: item(n(n(desease)),2,3) 
+ others: [] 
+ constrains: [(nc(nc(n(desease)))--->[n(n(desease))])] 
+ conseqvent: item(nc(nc(n(desease))),2,3) 
+Adding to agenda: <-> item(nc(nc(n(desease))),2,3) 
+Adding to chart: <3> item(n(n(treatment)),3,4) 
+cyk1:
+ pivot: item(n(n(treatment)),3,4) 
+ others: [] 
+ constrains: [(nc(nc(n(treatment)))--->[n(n(treatment))])] 
+ conseqvent: item(nc(nc(n(treatment))),3,4) 
+Adding to agenda: <-> item(nc(nc(n(treatment))),3,4) 
+Adding to chart: <6> item(nc(nc(n(elephant))),0,1) 
+Adding to chart: <2> item(nc(nc(n(skin))),1,2) 
+cyk2:
+ pivot: item(nc(nc(n(skin))),1,2) 
+ others: [item(nc(nc(n(elephant))),0,1)] 
+ constrains: [nonvar(nc(nc(n(elephant)))),nonvar(nc(nc(n(skin)))),(nc(nc(nc(n(elephant)),nc(n(skin))))--->[nc(nc(n(elephant))),nc(nc(n(skin)))])] 
+ conseqvent: item(nc(nc(nc(n(elephant)),nc(n(skin)))),0,2) 
+Adding to agenda: <-> item(nc(nc(nc(n(elephant)),nc(n(skin)))),0,2) 
+Adding to chart: <7> item(nc(nc(n(desease))),2,3) 
+cyk2:
+ pivot: item(nc(nc(n(desease))),2,3) 
+ others: [item(nc(nc(n(skin))),1,2)] 
+ constrains: [nonvar(nc(nc(n(skin)))),nonvar(nc(nc(n(desease)))),(nc(nc(nc(n(skin)),nc(n(desease))))--->[nc(nc(n(skin))),nc(nc(n(desease)))])] 
+ conseqvent: item(nc(nc(nc(n(skin)),nc(n(desease)))),1,3) 
+Adding to agenda: <-> item(nc(nc(nc(n(skin)),nc(n(desease)))),1,3) 
+Adding to chart: <3> item(nc(nc(n(treatment))),3,4) 
+cyk2:
+ pivot: item(nc(nc(n(treatment))),3,4) 
+ others: [item(nc(nc(n(desease))),2,3)] 
+ constrains: [nonvar(nc(nc(n(desease)))),nonvar(nc(nc(n(treatment)))),(nc(nc(nc(n(desease)),nc(n(treatment))))--->[nc(nc(n(desease))),nc(nc(n(treatment)))])] 
+ conseqvent: item(nc(nc(nc(n(desease)),nc(n(treatment)))),2,4) 
+Adding to agenda: <-> item(nc(nc(nc(n(desease)),nc(n(treatment)))),2,4) 
+Adding to chart: <5> item(nc(nc(nc(n(elephant)),nc(n(skin)))),0,2) 
+cyk2:
+ pivot: item(nc(nc(nc(n(elephant)),nc(n(skin)))),0,2) 
+ others: [item(nc(nc(n(desease))),2,3)] 
+ constrains: [nonvar(nc(nc(nc(n(elephant)),nc(n(skin))))),nonvar(nc(nc(n(desease)))),(nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(n(desease))))--->[nc(nc(nc(n(elephant)),nc(n(skin)))),nc(nc(n(desease)))])] 
+ conseqvent: item(nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(n(desease)))),0,3) 
+Adding to agenda: <-> item(nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(n(desease)))),0,3) 
+Adding to chart: <2> item(nc(nc(nc(n(skin)),nc(n(desease)))),1,3) 
+cyk2:
+ pivot: item(nc(nc(nc(n(skin)),nc(n(desease)))),1,3) 
+ others: [item(nc(nc(n(treatment))),3,4)] 
+ constrains: [nonvar(nc(nc(nc(n(skin)),nc(n(desease))))),nonvar(nc(nc(n(treatment)))),(nc(nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment))))--->[nc(nc(nc(n(skin)),nc(n(desease)))),nc(nc(n(treatment)))])] 
+ conseqvent: item(nc(nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment)))),1,4) 
+cyk2:
+ pivot: item(nc(nc(nc(n(skin)),nc(n(desease)))),1,3) 
+ others: [item(nc(nc(n(elephant))),0,1)] 
+ constrains: [nonvar(nc(nc(n(elephant)))),nonvar(nc(nc(nc(n(skin)),nc(n(desease))))),(nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(n(desease)))))--->[nc(nc(n(elephant))),nc(nc(nc(n(skin)),nc(n(desease))))])] 
+ conseqvent: item(nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(n(desease))))),0,3) 
+Adding to agenda: <-> item(nc(nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment)))),1,4) 
+Adding to agenda: <-> item(nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(n(desease))))),0,3) 
+Adding to chart: <7> item(nc(nc(nc(n(desease)),nc(n(treatment)))),2,4) 
+cyk2:
+ pivot: item(nc(nc(nc(n(desease)),nc(n(treatment)))),2,4) 
+ others: [item(nc(nc(n(skin))),1,2)] 
+ constrains: [nonvar(nc(nc(n(skin)))),nonvar(nc(nc(nc(n(desease)),nc(n(treatment))))),(nc(nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment)))))--->[nc(nc(n(skin))),nc(nc(nc(n(desease)),nc(n(treatment))))])] 
+ conseqvent: item(nc(nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment))))),1,4) 
+cyk2:
+ pivot: item(nc(nc(nc(n(desease)),nc(n(treatment)))),2,4) 
+ others: [item(nc(nc(nc(n(elephant)),nc(n(skin)))),0,2)] 
+ constrains: [nonvar(nc(nc(nc(n(elephant)),nc(n(skin))))),nonvar(nc(nc(nc(n(desease)),nc(n(treatment))))),(nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(nc(n(desease)),nc(n(treatment)))))--->[nc(nc(nc(n(elephant)),nc(n(skin)))),nc(nc(nc(n(desease)),nc(n(treatment))))])] 
+ conseqvent: item(nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(nc(n(desease)),nc(n(treatment))))),0,4) 
+Adding to agenda: <-> item(nc(nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment))))),1,4) 
+Adding to agenda: <-> item(nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(nc(n(desease)),nc(n(treatment))))),0,4) 
+Adding to chart: <0> item(nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(n(desease)))),0,3) 
+cyk2:
+ pivot: item(nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(n(desease)))),0,3) 
+ others: [item(nc(nc(n(treatment))),3,4)] 
+ constrains: [nonvar(nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(n(desease))))),nonvar(nc(nc(n(treatment)))),(nc(nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(n(desease))),nc(n(treatment))))--->[nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(n(desease)))),nc(nc(n(treatment)))])] 
+ conseqvent: item(nc(nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(n(desease))),nc(n(treatment)))),0,4) 
+Adding to agenda: <-> item(nc(nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(n(desease))),nc(n(treatment)))),0,4) 
+Adding to chart: <9> item(nc(nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment)))),1,4) 
+cyk2:
+ pivot: item(nc(nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment)))),1,4) 
+ others: [item(nc(nc(n(elephant))),0,1)] 
+ constrains: [nonvar(nc(nc(n(elephant)))),nonvar(nc(nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment))))),(nc(nc(nc(n(elephant)),nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment)))))--->[nc(nc(n(elephant))),nc(nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment))))])] 
+ conseqvent: item(nc(nc(nc(n(elephant)),nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment))))),0,4) 
+Adding to agenda: <-> item(nc(nc(nc(n(elephant)),nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment))))),0,4) 
+Adding to chart: <0> item(nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(n(desease))))),0,3) 
+cyk2:
+ pivot: item(nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(n(desease))))),0,3) 
+ others: [item(nc(nc(n(treatment))),3,4)] 
+ constrains: [nonvar(nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(n(desease)))))),nonvar(nc(nc(n(treatment)))),(nc(nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(n(desease)))),nc(n(treatment))))--->[nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(n(desease))))),nc(nc(n(treatment)))])] 
+ conseqvent: item(nc(nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(n(desease)))),nc(n(treatment)))),0,4) 
+Adding to agenda: <-> item(nc(nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(n(desease)))),nc(n(treatment)))),0,4) 
+Adding to chart: <9> item(nc(nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment))))),1,4) 
+cyk2:
+ pivot: item(nc(nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment))))),1,4) 
+ others: [item(nc(nc(n(elephant))),0,1)] 
+ constrains: [nonvar(nc(nc(n(elephant)))),nonvar(nc(nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment)))))),(nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment))))))--->[nc(nc(n(elephant))),nc(nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment)))))])] 
+ conseqvent: item(nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment)))))),0,4) 
+Adding to agenda: <-> item(nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment)))))),0,4) 
+Adding to chart: <7> item(nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(nc(n(desease)),nc(n(treatment))))),0,4) 
+Adding to chart: <7> item(nc(nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(n(desease))),nc(n(treatment)))),0,4) 
+Adding to chart: <7> item(nc(nc(nc(n(elephant)),nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment))))),0,4) 
+Adding to chart: <7> item(nc(nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(n(desease)))),nc(n(treatment)))),0,4) 
+Adding to chart: <7> item(nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment)))))),0,4) 
+
+   arb.synt.=  nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(nc(n(desease)),nc(n(treatment)))))
+   arb.synt.=  nc(nc(nc(nc(nc(n(elephant)),nc(n(skin))),nc(n(desease))),nc(n(treatment))))
+   arb.synt.=  nc(nc(nc(n(elephant)),nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment)))))
+   arb.synt.=  nc(nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(n(desease)))),nc(n(treatment))))
+   arb.synt.=  nc(nc(nc(n(elephant)),nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment))))))
+
+  prop=    [skin,desease,treatment,.]
+Adding to agenda: <-> item(n(n(skin)),0,1) 
+Adding to agenda: <-> item(n(n(desease)),1,2) 
+Adding to agenda: <-> item(n(n(treatment)),2,3) 
+Adding to chart: <6> item(n(n(skin)),0,1) 
+cyk1:
+ pivot: item(n(n(skin)),0,1) 
+ others: [] 
+ constrains: [(nc(nc(n(skin)))--->[n(n(skin))])] 
+ conseqvent: item(nc(nc(n(skin))),0,1) 
+Adding to agenda: <-> item(nc(nc(n(skin))),0,1) 
+Adding to chart: <2> item(n(n(desease)),1,2) 
+cyk1:
+ pivot: item(n(n(desease)),1,2) 
+ others: [] 
+ constrains: [(nc(nc(n(desease)))--->[n(n(desease))])] 
+ conseqvent: item(nc(nc(n(desease))),1,2) 
+Adding to agenda: <-> item(nc(nc(n(desease))),1,2) 
+Adding to chart: <7> item(n(n(treatment)),2,3) 
+cyk1:
+ pivot: item(n(n(treatment)),2,3) 
+ others: [] 
+ constrains: [(nc(nc(n(treatment)))--->[n(n(treatment))])] 
+ conseqvent: item(nc(nc(n(treatment))),2,3) 
+Adding to agenda: <-> item(nc(nc(n(treatment))),2,3) 
+Adding to chart: <6> item(nc(nc(n(skin))),0,1) 
+Adding to chart: <2> item(nc(nc(n(desease))),1,2) 
+cyk2:
+ pivot: item(nc(nc(n(desease))),1,2) 
+ others: [item(nc(nc(n(skin))),0,1)] 
+ constrains: [nonvar(nc(nc(n(skin)))),nonvar(nc(nc(n(desease)))),(nc(nc(nc(n(skin)),nc(n(desease))))--->[nc(nc(n(skin))),nc(nc(n(desease)))])] 
+ conseqvent: item(nc(nc(nc(n(skin)),nc(n(desease)))),0,2) 
+Adding to agenda: <-> item(nc(nc(nc(n(skin)),nc(n(desease)))),0,2) 
+Adding to chart: <7> item(nc(nc(n(treatment))),2,3) 
+cyk2:
+ pivot: item(nc(nc(n(treatment))),2,3) 
+ others: [item(nc(nc(n(desease))),1,2)] 
+ constrains: [nonvar(nc(nc(n(desease)))),nonvar(nc(nc(n(treatment)))),(nc(nc(nc(n(desease)),nc(n(treatment))))--->[nc(nc(n(desease))),nc(nc(n(treatment)))])] 
+ conseqvent: item(nc(nc(nc(n(desease)),nc(n(treatment)))),1,3) 
+Adding to agenda: <-> item(nc(nc(nc(n(desease)),nc(n(treatment)))),1,3) 
+Adding to chart: <5> item(nc(nc(nc(n(skin)),nc(n(desease)))),0,2) 
+cyk2:
+ pivot: item(nc(nc(nc(n(skin)),nc(n(desease)))),0,2) 
+ others: [item(nc(nc(n(treatment))),2,3)] 
+ constrains: [nonvar(nc(nc(nc(n(skin)),nc(n(desease))))),nonvar(nc(nc(n(treatment)))),(nc(nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment))))--->[nc(nc(nc(n(skin)),nc(n(desease)))),nc(nc(n(treatment)))])] 
+ conseqvent: item(nc(nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment)))),0,3) 
+Adding to agenda: <-> item(nc(nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment)))),0,3) 
+Adding to chart: <2> item(nc(nc(nc(n(desease)),nc(n(treatment)))),1,3) 
+cyk2:
+ pivot: item(nc(nc(nc(n(desease)),nc(n(treatment)))),1,3) 
+ others: [item(nc(nc(n(skin))),0,1)] 
+ constrains: [nonvar(nc(nc(n(skin)))),nonvar(nc(nc(nc(n(desease)),nc(n(treatment))))),(nc(nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment)))))--->[nc(nc(n(skin))),nc(nc(nc(n(desease)),nc(n(treatment))))])] 
+ conseqvent: item(nc(nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment))))),0,3) 
+Adding to agenda: <-> item(nc(nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment))))),0,3) 
+Adding to chart: <0> item(nc(nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment)))),0,3) 
+Adding to chart: <0> item(nc(nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment))))),0,3) 
+
+   arb.synt.=  nc(nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment))))
+   arb.synt.=  nc(nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment)))))
+
+word(1, skin).
+word(2, desease).
+word(3, treatment).
+
+stored(0, item(n(n(skin)),0,1)).
+stored(1, item(n(n(desease)),1,2)).
+stored(2, item(n(n(treatment)),2,3)).
+stored(3, item(nc(nc(n(skin))),0,1)).
+stored(4, item(nc(nc(n(desease))),1,2)).
+stored(5, item(nc(nc(n(treatment))),2,3)).
+stored(6, item(nc(nc(nc(n(skin)),nc(n(desease)))),0,2)).
+stored(7, item(nc(nc(nc(n(desease)),nc(n(treatment)))),1,3)).
+stored(8, item(nc(nc(nc(nc(n(skin)),nc(n(desease))),nc(n(treatment)))),0,3)).
+stored(9, item(nc(nc(nc(n(skin)),nc(nc(n(desease)),nc(n(treatment))))),0,3)).
+
+key_index(6, 0).
+key_index(2, 1).
+key_index(7, 2).
+key_index(6, 3).
+key_index(2, 4).
+key_index(7, 5).
+key_index(5, 6).
+key_index(2, 7).
+key_index(0, 8).
+key_index(0, 9).
+
+
+
+all solutions in 0.020 seconds.

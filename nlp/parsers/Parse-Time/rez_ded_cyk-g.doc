@@ -1,0 +1,7 @@
+
+
+  prop=    [acest,frumos,baiat,vede,un,pletos,ciine,.]
+
+   arb.synt.=  s(s(np(det(acest),np2(adj(frumos),np2(n(baiat)))),vp(v(vede),np(det(un),np2(adj(pletos),np2(n(ciine)))))))
+
+all solutions in 0.000 seconds.

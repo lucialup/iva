@@ -1,0 +1,87 @@
+
+
+  prop=    [john,really,likes,bananas,.]
+Adding to agenda: <-> item(np,0,1,[np,john]) 
+Adding to agenda: <-> item(s-np+(s-np),1,2,[s-np+(s-np),really]) 
+Adding to agenda: <-> item(s-np+np,2,3,[s-np+np,likes]) 
+Adding to agenda: <-> item(np,3,4,[np,bananas]) 
+Adding to chart: <i> item(np,0,1,[np,john]) 
+Adding to chart: <i> item(s-np+(s-np),1,2,[s-np+(s-np),really]) 
+Adding to chart: <i> item(s-np+np,2,3,[s-np+np,likes]) 
+forward-composition1:
+ pivot: item(s-np+np,2,3,[s-np+np,likes]) 
+ others: [item(s-np+(s-np),1,2,[s-np+(s-np),really])] 
+ constrains: [] 
+ conseqvent: item(s-np+np,1,3,[s-np+np,[s-np+(s-np),really],[s-np+np,likes]]) 
+Adding to agenda: <-> item(s-np+np,1,3,[s-np+np,[s-np+(s-np),really],[s-np+np,likes]]) 
+Adding to chart: <i> item(np,3,4,[np,bananas]) 
+forward-application:
+ pivot: item(np,3,4,[np,bananas]) 
+ others: [item(s-np+np,2,3,[s-np+np,likes])] 
+ constrains: [] 
+ conseqvent: item(s-np,2,4,[s-np,[s-np+np,likes],[np,bananas]]) 
+Adding to agenda: <-> item(s-np,2,4,[s-np,[s-np+np,likes],[np,bananas]]) 
+Adding to chart: <i> item(s-np+np,1,3,[s-np+np,[s-np+(s-np),really],[s-np+np,likes]]) 
+forward-application:
+ pivot: item(s-np+np,1,3,[s-np+np,[s-np+(s-np),really],[s-np+np,likes]]) 
+ others: [item(np,3,4,[np,bananas])] 
+ constrains: [] 
+ conseqvent: item(s-np,1,4,[s-np,[s-np+np,[s-np+(s-np),really],[s-np+np,likes]],[np,bananas]]) 
+Adding to agenda: <-> item(s-np,1,4,[s-np,[s-np+np,[s-np+(s-np),really],[s-np+np,likes]],[np,bananas]]) 
+Adding to chart: <i> item(s-np,2,4,[s-np,[s-np+np,likes],[np,bananas]]) 
+forward-application:
+ pivot: item(s-np,2,4,[s-np,[s-np+np,likes],[np,bananas]]) 
+ others: [item(s-np+(s-np),1,2,[s-np+(s-np),really])] 
+ constrains: [] 
+ conseqvent: item(s-np,1,4,[s-np,[s-np+(s-np),really],[s-np,[s-np+np,likes],[np,bananas]]]) 
+Adding to agenda: <-> item(s-np,1,4,[s-np,[s-np+(s-np),really],[s-np,[s-np+np,likes],[np,bananas]]]) 
+Adding to chart: <i> item(s-np,1,4,[s-np,[s-np+np,[s-np+(s-np),really],[s-np+np,likes]],[np,bananas]]) 
+backword-application:
+ pivot: item(s-np,1,4,[s-np,[s-np+np,[s-np+(s-np),really],[s-np+np,likes]],[np,bananas]]) 
+ others: [item(np,0,1,[np,john])] 
+ constrains: [] 
+ conseqvent: item(s,0,4,[s,[np,john],[s-np,[s-np+np,[s-np+(s-np),really],[s-np+np,likes]],[np,bananas]]]) 
+Adding to agenda: <-> item(s,0,4,[s,[np,john],[s-np,[s-np+np,[s-np+(s-np),really],[s-np+np,likes]],[np,bananas]]]) 
+Adding to chart: <i> item(s-np,1,4,[s-np,[s-np+(s-np),really],[s-np,[s-np+np,likes],[np,bananas]]]) 
+backword-application:
+ pivot: item(s-np,1,4,[s-np,[s-np+(s-np),really],[s-np,[s-np+np,likes],[np,bananas]]]) 
+ others: [item(np,0,1,[np,john])] 
+ constrains: [] 
+ conseqvent: item(s,0,4,[s,[np,john],[s-np,[s-np+(s-np),really],[s-np,[s-np+np,likes],[np,bananas]]]]) 
+Adding to agenda: <-> item(s,0,4,[s,[np,john],[s-np,[s-np+(s-np),really],[s-np,[s-np+np,likes],[np,bananas]]]]) 
+Adding to chart: <i> item(s,0,4,[s,[np,john],[s-np,[s-np+np,[s-np+(s-np),really],[s-np+np,likes]],[np,bananas]]]) 
+Adding to chart: <i> item(s,0,4,[s,[np,john],[s-np,[s-np+(s-np),really],[s-np,[s-np+np,likes],[np,bananas]]]]) 
+
+   arb.synt.=  [s,[np,john],[s-np,[s-np+np,[s-np+(s-np),really],[s-np+np,likes]],[np,bananas]]]
+   arb.synt.=  [s,[np,john],[s-np,[s-np+(s-np),really],[s-np,[s-np+np,likes],[np,bananas]]]]
+
+word(1, john).
+word(2, really).
+word(3, likes).
+word(4, bananas).
+
+stored(0, item(np,0,1,[np,john])).
+stored(1, item(s-np+(s-np),1,2,[s-np+(s-np),really])).
+stored(2, item(s-np+np,2,3,[s-np+np,likes])).
+stored(3, item(np,3,4,[np,bananas])).
+stored(4, item(s-np+np,1,3,[s-np+np,[s-np+(s-np),really],[s-np+np,likes]])).
+stored(5, item(s-np,2,4,[s-np,[s-np+np,likes],[np,bananas]])).
+stored(6, item(s-np,1,4,[s-np,[s-np+np,[s-np+(s-np),really],[s-np+np,likes]],[np,bananas]])).
+stored(7, item(s-np,1,4,[s-np,[s-np+(s-np),really],[s-np,[s-np+np,likes],[np,bananas]]])).
+stored(8, item(s,0,4,[s,[np,john],[s-np,[s-np+np,[s-np+(s-np),really],[s-np+np,likes]],[np,bananas]]])).
+stored(9, item(s,0,4,[s,[np,john],[s-np,[s-np+(s-np),really],[s-np,[s-np+np,likes],[np,bananas]]]])).
+
+key_index(i, 0).
+key_index(i, 1).
+key_index(i, 2).
+key_index(i, 3).
+key_index(i, 4).
+key_index(i, 5).
+key_index(i, 6).
+key_index(i, 7).
+key_index(i, 8).
+key_index(i, 9).
+
+
+
+all solutions in 0.010 seconds.
