@@ -62,7 +62,7 @@ leaf(adj)-->[atragatoare].
 
 leaf(a)-->[a].
 
-/* Left Corner Dominance Rules */
+
 
 lcd(s,ut):-!.
 lcd(np2,s):-!.
@@ -93,12 +93,11 @@ lcd(pp,ut):-!.
 lcd(np2,ut):-!.
 lcd(inf_clause,ut):-!.
 
-/* Left Corner Rules */
 lc(X,X):-!.
 lc(X,Y):-lcd(X,Y),!.
 lc(X,Y):-lcd(X,Z),lc(Z,Y).
 
-/* Parser */
+
 parse(Nterm,As,[W0|W1],Wn):-
     leaf(Pterm,[W0|W1],W1),
     lc(Pterm,Nterm),
@@ -106,7 +105,6 @@ parse(Nterm,As,[W0|W1],Wn):-
     P=..[Pterm,Nterm,Ap,As,W1,Wn],
     call(P).
 
-/* Terminal Categories */
 coord(coord,A,A)-->[].
 prep(prep,A,A)-->[].
 det(det,A,A)-->[].
@@ -120,7 +118,9 @@ adj(adj,A,A)-->[].
 adv(adv,A,A)-->[].
 a(a,A,A)-->[].
 
-/* Non-terminal Rules */
+
+
+
 ut(ut,A,A)-->[].
 s(Nt,S,As)-->{lc(ut,Nt)},ut(Nt,ut(S),As).
 s(Nt,S1,As)-->{lc(ut,Nt)},parse(coord,C),parse(s,S2),ut(Nt,ut(S1,C,S2),As).
@@ -185,7 +185,7 @@ tv(Nt,TV,As)-->{lc(v1,Nt)},parse(det,SC),parse(v1,V),v1(Nt,v1(TV,sc(SC,V)),As).
 pp(pp,A,A)-->[].
 prep(Nt,Prep,As)-->{lc(pp,Nt)},parse(np2,NP),pp(Nt,pp(Prep,NP),As).
 
-/* handling for pentru a + infinitive */
+/* pentru a + infinitiv */
 pp(pp,A,A)-->[].
 prep(Nt,Prep,As)-->{lc(pp,Nt)},parse(np2,NP),pp(Nt,pp(Prep,NP),As).
 prep(Nt,pentru,As)-->{lc(pp,Nt)},[a],parse(tv,V),parse(np2,NP),
@@ -197,7 +197,7 @@ pp(Nt,PP,As)-->{lc(advp,Nt)},advp(Nt,advp(PP),As).
 
 
 
-/* Test predicates */
+/* Test */
 %test1(A):-parse(ut,A,[in,fiecare,saptamana,ana,merge,la,biblioteca,orasului,pentru,a,imprumuta,carti,noi],[]).
 test1(A):-parse(ut,A,[in,fiecare,saptamana,ana,merge,la,biblioteca,pentru,carti,noi],[]).
 test2(A):-parse(ut,A,[bibliotecarul,ii,recomanda,adesea,romane,poezii,si,carti,de,stiinta],[]).

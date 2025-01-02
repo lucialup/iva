@@ -139,7 +139,7 @@ w('a', 'a').
 w('sa', 'sa').
 w('pentru', 'pentru').
 
-% Parser utilities
+% utils
 member(X,[X|_]):-!.
 member(X,[_|Y]):-member(X,Y).
 
@@ -149,7 +149,6 @@ append([],X,X).
 findall(X,Y,Z):-setof(X,Y,Z),!.
 findall(X,Y,[]).
 
-% Chart writing utilities
 write_chart([]).
 write_chart([H|T]):-write_arc(H),nl,write_chart(T).
 
@@ -165,7 +164,7 @@ invers([], []):- !.
 invers(A, A):- atomic(A).
 invers([H|T], Ia):- invers(H, Ih), invers(T, It), append(It, [Ih], Ia).
 
-% Core parser predicates
+% parser
 init_agenda([W|RW],V0,Agenda):-
     V1 is V0+1,
     findall(arc([W|RW],RW,Ln,[],[W,Ln]),w(Ln,W),AgW),
@@ -198,7 +197,7 @@ newarce(arc(V1,V2,Ln,[],ALn),Chart,Newarce):-
 newarce(arc(V1,V2,Ln,[FRn|RRn],ALn),Chart,Newarce):-
     findall(arc(V1,V3,Ln,RRn,[AFRn|ALn]),member(arc(V2,V3,FRn,[],AFRn),Chart),Newarce).
 
-% Test predicates
+% Test
 test(S):-
     init_agenda(S,0,Agenda),
     write_chart(Agenda),nl,
@@ -209,7 +208,6 @@ test(S):-
     nl,write('Prop='),write(S),
     nl,write('Arb='),mwrite(As),nl.
 
-% Test cases for my sentences
 test1 :- test(['in', 'fiecare', 'saptamana', 'ana', 'merge', 'la', 'biblioteca', 'orasului', 
                'pentru', 'a', 'imprumuta', 'carti', 'noi']).
 

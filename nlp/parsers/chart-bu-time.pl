@@ -2,7 +2,6 @@
 
 inits(ut).
 
-% Grammar rules
 r(ut, [s]).
 r(ut, [s, coord, s]).
 r(s, [np2, vp2]).
@@ -127,7 +126,8 @@ w(adv, cel_mai_mult).
 w(num, un).
 w(num, o).
 
-% Parser implementation
+
+
 test(S):-
     V0 is 1,
     inits(Sym),
@@ -180,7 +180,7 @@ retract2:-
     retract2.
 retract2.
 
-% Test predicates for my sentences
+% Test
 test1 :- test(['in', 'fiecare', 'saptamana', 'ana', 'merge', 'la', 'biblioteca', 'orasului', 
                'pentru', 'a', 'imprumuta', 'carti', 'noi']).
 
