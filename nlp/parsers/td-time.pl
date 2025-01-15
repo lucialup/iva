@@ -65,22 +65,22 @@ subcj(sc(sa,V1))-->[sa],v1(V1).
 
 rc(rc(RP,VP))-->relpro(RP),vp2(VP).
 
-
-%lexicon
-
 coord(coord(si))-->[si].
 coord(coord(iar))-->[iar].
 coord(coord(sa))-->[sa].
+
 prep(prep(in))-->[in].
 prep(prep(pe))-->[pe].
 prep(prep(de))-->[de].
 prep(prep(la))-->[la].
 prep(prep(din))-->[din].
+
 det(det(o))-->[o].
 det(det(cel))-->[cel].
 det(det(cele))-->[cele].
 det(det(mai))-->[mai].
 det(det(fiecare))-->[fiecare].
+
 noun(noun(ana))-->[ana].
 noun(noun(saptamana))-->[saptamana].
 noun(noun(biblioteca))-->[biblioteca].
@@ -92,7 +92,9 @@ noun(noun(poezii))-->[poezii].
 noun(noun(stiinta))-->[stiinta].
 noun(noun(sfarsitul))-->[sfarsitul].
 noun(noun(zilei))-->[zilei].
+
 p_nehot(p_nehot(tot))-->[tot].
+
 tv(tv(merge))-->[merge].
 tv(tv(imprumuta))-->[imprumuta].
 tv(tv(recomanda))-->[recomanda].
@@ -100,27 +102,34 @@ tv(tv(alege))-->[alege].
 tv(tv(atrag))-->[atrag].
 tv(tv(incepe))-->[incepe].
 tv(tv(citeasca))-->[citeasca].
+
 iv(iv(merge))-->[merge].
 iv(iv(citeste))-->[citeste].
 iv(iv(citeasca))-->[citeasca].
 iv(iv(intoarce))-->[intoarce].
+
 relpro(relpro(care))-->[care].
 relpro(relpro(ce))-->[ce].
+
 pn(pn(ana))-->[ana].
 pro(pro(ii))-->[ii].
 pro(pro(le))-->[le].
 pro(pro(se))-->[se].
 pro(pro(o))-->[o].
+
 ppos(ppos(meu))-->[meu].
 ppos(ppos(mea))-->[mea].
+
 adj(adj(noi))-->[noi].
 adj(adj(mult))-->[mult].
 adj(adj(atragatoare))-->[atragatoare].
+
 adv(adv(entuziasmata))-->[entuziasmata].
 adv(adv(acasa))-->[acasa].
 adv(adv(adesea))-->[adesea].
 adv(adv(mai))-->[mai].
 adv(adv(cel_mai_mult))-->[cel,mai,mult].
+
 num(num(un))-->[un].
 num(num(o))-->[o].
 
@@ -150,5 +159,5 @@ test_time:-
     test_all,nl,
     statistics(walltime,[End,_]),
     Time is End-Start,
-    format('All solutions in ~8d seconds.~n',[Time]),
+    format('All solutions in ~3d seconds.~n',[Time]),
     told.

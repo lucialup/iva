@@ -1,3 +1,22 @@
+:-discontiguous pro/5.
+:-discontiguous np2/5.
+:-discontiguous det/5.
+:-discontiguous pn/5.
+:-discontiguous pp/5.
+:-discontiguous n1/5.
+:-discontiguous noun/5.
+:-discontiguous p_nehot/5.
+:-discontiguous a2/5.
+:-discontiguous a0/5.
+:-discontiguous adj/5.
+:-discontiguous v1/5.
+:-discontiguous iv/5.
+:-discontiguous tv/5.
+:-discontiguous prep/5.
+:-discontiguous adv/5.
+:-discontiguous a/5.
+
+
 leaf(noun)-->[biblioteca].
 leaf(noun)-->[bibliotecarul].
 leaf(noun)-->[orasului].
@@ -47,6 +66,8 @@ leaf(prep)-->[la].
 leaf(prep)-->[din].
 leaf(prep)-->[pentru].
 
+
+
 leaf(det)-->[o].
 leaf(det)-->[cel].
 leaf(det)-->[cele].
@@ -64,34 +85,36 @@ leaf(a)-->[a].
 
 
 
-lcd(s,ut):-!.
-lcd(np2,s):-!.
-lcd(np1,np2):-!.
-lcd(det,np1):-!.
-lcd(n1,np1):-!.
-lcd(a2,np1):-!.
-lcd(pp,np1):-!.
-lcd(n0,n1):-!.
-lcd(noun,n0):-!.
-lcd(p_nehot,n0):-!.
-lcd(vp1,vp2):-!.
-lcd(v1,vp1):-!.
-lcd(pro,vp1):-!.
-lcd(pro,np1):-!.
-lcd(pn,np1):-!.
-lcd(iv,v1):-!.
-lcd(tv,v1):-!.
-lcd(prep,pp):-!.
-lcd(adv,advp):-!.
-lcd(advp,s):-!.
-lcd(pp,advp):-!.
-lcd(pp,s):-!.
-lcd(a0,a1):-!.
-lcd(a1,a2):-!.
-lcd(adj,a0):-!.
-lcd(pp,ut):-!.
-lcd(np2,ut):-!.
-lcd(inf_clause,ut):-!.
+lcd(s,ut).
+lcd(np2,s).
+lcd(np1,np2).
+lcd(det,np1).
+lcd(n1,np1).
+lcd(a2,np1).
+lcd(pp,np1).
+lcd(n0,n1).
+lcd(noun,n0).
+lcd(p_nehot,n0).
+lcd(vp1,vp2).
+lcd(v1,vp1).
+lcd(pro,vp1).
+lcd(pro,np1).
+lcd(pn,np1).
+lcd(iv,v1).
+lcd(tv,v1).
+lcd(prep,pp).
+lcd(pp,pps).
+lcd(adv,advp).
+lcd(advp,s).
+lcd(pp,advp).
+lcd(pp,s).
+lcd(a0,a1).
+lcd(a1,a2).
+lcd(adj,a0).
+lcd(pp,ut).
+lcd(np2,ut).
+%lcd(inf_clause,ut):-!.
+lcd(a,inf_clause).
 
 lc(X,X):-!.
 lc(X,Y):-lcd(X,Y),!.
@@ -101,7 +124,7 @@ lc(X,Y):-lcd(X,Z),lc(Z,Y).
 parse(Nterm,As,[W0|W1],Wn):-
     leaf(Pterm,[W0|W1],W1),
     lc(Pterm,Nterm),
-    Ap=..[Pterm,W0],
+    Ap=..[Pterm,W0],   %write(Ap),nl,
     P=..[Pterm,Nterm,Ap,As,W1,Wn],
     call(P).
 
@@ -175,7 +198,7 @@ pro(Nt,P,As)-->{lc(vp1,Nt)},parse(v1,V),parse(adv,Adv),vp1(Nt,vp1(P,V,Adv),As).
 
 v1(v1,A,A)-->[].
 iv(Nt,V,As)-->{lc(v1,Nt)},v1(Nt,v1(V),As).
-iv(Nt,V,As)-->{lc(v1,Nt)},parse(pp,PP),v1(Nt,v1(V,PP),As).
+iv(Nt,V,As)-->{lc(v1,Nt)},parse(pps,PP),v1(Nt,v1(V,PP),As).% pp->pps
 iv(Nt,V,As)-->{lc(v1,Nt)},parse(adv,Adv),v1(Nt,v1(V,Adv),As).
 tv(Nt,V,As)-->{lc(v1,Nt)},parse(np2,NP),v1(Nt,v1(V,NP),As).
 tv(Nt,V,As)-->{lc(v1,Nt)},parse(adv,Adv),parse(np2,NP),v1(Nt,v1(V,Adv,NP),As).
@@ -188,13 +211,31 @@ prep(Nt,Prep,As)-->{lc(pp,Nt)},parse(np2,NP),pp(Nt,pp(Prep,NP),As).
 /* pentru a + infinitiv */
 pp(pp,A,A)-->[].
 prep(Nt,Prep,As)-->{lc(pp,Nt)},parse(np2,NP),pp(Nt,pp(Prep,NP),As).
-prep(Nt,pentru,As)-->{lc(pp,Nt)},[a],parse(tv,V),parse(np2,NP),
+
+%prep(Nt,pentru,As)-->{lc(pp,Nt)},[a],parse(tv,V),parse(np2,NP),
     pp(Nt,pp(pentru,inf_clause(a,V,NP)),As).
+
+prep(Nt,P,As)-->{lc(pp,Nt)},parse(inf_clause,Inf),
+                  pp(Nt,pp(P,Inf),As).
+
+
+%pp(pp(Prep,NP))-->prep(Prep),np2(NP).
+%pp(pp(pentru,Inf))-->[pentru],inf_clause(Inf).
 
 advp(advp,A,A)-->[].
 adv(Nt,Adv,As)-->{lc(advp,Nt)},advp(Nt,advp(Adv),As).
 pp(Nt,PP,As)-->{lc(advp,Nt)},advp(Nt,advp(PP),As).
 
+%inf_clause(inf_clause(a,V,NP))-->[a],tv(V),np2(NP).
+inf_clause(inf_clause,A,A)-->[].
+a(Nt,A,As)-->{lc(inf_clause,Nt)},parse(tv,V),parse(np2,NP),
+              inf_clause(Nt,inf_clause(A,V,NP),As).
+
+%pps(pps(PP))-->pp(PP).
+%pps(pps(PP,More))-->pp(PP),pps(More).
+pps(pps,A,A)-->[].
+pp(Nt,PP,As)-->{lc(pps,Nt)},pps(Nt,pps(PP),As).
+pp(Nt,PP,As)-->{lc(pps,Nt)},parse(pps,PPS),pps(Nt,pps(PP,PPS),As).
 
 
 /* Test */
@@ -209,12 +250,16 @@ exe([bibliotecarul,ii,recomanda,adesea,romane,poezii,si,carti,de,stiinta]).
 exe([ana,le,alege,pe,cele,atragatoare,din,biblioteca]).
 exe([la,sfarsitul,zilei,se,intoarce,acasa,si,incepe,sa,citeasca,entuziasmata]).
 
-test_run(E,A):-exe(E), parse(ut,A,E,[]).
+test_run(E,A):-exe(E),do( parse(ut,A,E,[]) ),
+                nl,write(E),nl,write(A),nl,fail.
+test_run(E,A).
+
+do(Y):-Y,!.
 
 test_all:-
     tell('lc-time.doc'),
-    findall((E,A), test_run(E,A), L),
-    write_l(L).
+    test_run(E,A) .
+    %findall((E,A), test_run(E,A), L),write_l(L).
 
 write_l([]):-!.
 write_l([(E,A)|T]):-
@@ -227,5 +272,5 @@ test_time:-
     test_all,nl,
     statistics(walltime, [End,_]),
     Time is End - Start,
-    format('all solutions in ~8d seconds.~n', [Time]),
+    format('all solutions in ~3d seconds.~n', [Time]),
     told.

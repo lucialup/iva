@@ -1,8 +1,8 @@
-  :- ensure_loaded('inf-top-.pl').
+%  :- ensure_loaded('inf-top-.pl').
 
  % :- ensure_loaded('inf-bott.pl').
 
- %:- ensure_loaded('inf-earley.pl').
+ :- ensure_loaded('inf-earley.pl').
 
  %:- ensure_loaded('inf2-earley.pl').
 

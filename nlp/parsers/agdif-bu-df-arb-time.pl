@@ -200,9 +200,9 @@ newarce(arc(V1,V2,Ln,[FRn|RRn],ALn),Chart,Newarce):-
 % Test
 test(S):-
     init_agenda(S,0,Agenda),
-    write_chart(Agenda),nl,
+    %write_chart(Agenda),nl,
     expand_arc(Agenda,[],Chart),
-    write_chart(Chart),
+    %write_chart(Chart),
     inits(Sym),
     member(arc(S,[],Sym,[],As),Chart),
     nl,write('Prop='),write(S),
@@ -224,12 +224,12 @@ test_all :-
     test1,
     test2,
     test3,
-    test4,
-    told.
+    test4.
+    %told.
 
 test_time:-
     statistics(walltime, [Start,_]),
     test_all,
     statistics(walltime, [End,_]),
     Time is End - Start,
-    format('All solutions in ~3d seconds.~n', [Time]).
+    format('All solutions in ~3d seconds.~n', [Time]),told.

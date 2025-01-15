@@ -46,15 +46,15 @@ r(v1, [iv, pps]).
 r(v1, [tv, np2]).
 r(v1, [tv, pp]).
 r(v1, [tv, adv, np2]).
-r(v1, [tv, sc]).
+r(v1, [tv, subcj]).
 r(v1, [iv, adv]).
 
 r(pps, [pp]).
 r(pps, [pp, pps]).
 r(pp, [prep, np2]).
-r(pp, [pentru, inf_clause]).
+r(pp, [prep, inf_clause]).
 r(inf_clause, [a, tv, np2]).
-r(sc, [sa, v1]).
+r(subcj, [sa, v1]).
 r(rc, [relpro, vp2]).
 
 % Lexicon
@@ -67,6 +67,7 @@ w(prep, pe).
 w(prep, de).
 w(prep, la).
 w(prep, din).
+w(prep, pentru).
 
 w(det, o).
 w(det, cel).
@@ -121,10 +122,12 @@ w(adv, entuziasmata).
 w(adv, acasa).
 w(adv, adesea).
 w(adv, mai).
-w(adv, cel_mai_mult).
+w(adv, 'cel mai mult').
 
 w(num, un).
 w(num, o).
+w(a, a).
+w(sa, sa).
 
 
 
@@ -132,7 +135,8 @@ test(S):-
     V0 is 1,
     inits(Sym),
     parse(V0,Vn,S),
-    dofor(arc(V0,Vn,Sym,[],As),mwrite(As)),
+    arc(V0,Vn,Sym,[],As),nl,write(S),nl,mwrite(As),
+    %dofor(arc(V0,Vn,Sym,[],As),(nl,write(S),nl,mwrite(As))),
     nl,
     retract2.
 
@@ -174,9 +178,9 @@ append([H|T], L, [H|S]):- append(T, L, S).
 
 retract2:-
     retract(arc(A,B,C,D,E)), 
-    X = arc(A,B,C,D,E), 
-    write(X),
-    nl,
+    %X = arc(A,B,C,D,E), 
+    %write(X),
+    %nl,
     retract2.
 retract2.
 
@@ -197,8 +201,8 @@ test_all:-
     test1,
     test2,
     test3,
-    test4,
-    told.
+    test4.
+    %told.
 
 test_time:-
     statistics(walltime, [Start,_]),
@@ -206,4 +210,4 @@ test_time:-
     statistics(walltime, [End,_]),
     Time is End - Start,
     nl,
-    format('All solutions in ~3d seconds.~n', [Time]).
+    format('All solutions in ~3d seconds.~n', [Time]),told.
